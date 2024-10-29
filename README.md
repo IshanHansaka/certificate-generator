@@ -42,7 +42,7 @@ pip install pandas pillow
 
 1. **Clone this repository**:
    ```bash
-   git clone https://github.com/yourusername/certificate-generator.git
+   git clone https://github.com/IshanHansaka/certificate-generator.git
    cd certificate-generator
    ```
 
