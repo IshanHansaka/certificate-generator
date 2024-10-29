@@ -13,7 +13,7 @@ The goal of this project is to automate the process of creating certificates for
 - **template/**: Contains the certificate template image in PNG format.
 - **output/**: The script will save generated certificates in this directory.
 - **name_list.xlsx**: Excel file containing a list of participant names in a column titled "Name".
-- **certificate_generator.py**: The main script that reads data, formats text, and generates the certificates.
+- **create.py**: The main script that reads data, formats text, and generates the certificates.
 
 ## Workflow
 
@@ -38,7 +38,7 @@ pip install pandas pillow
 
 ```
 
-## Setup
+### Setup
 
 1. **Clone this repository**:
    ```bash
@@ -51,3 +51,11 @@ pip install pandas pillow
 - Place the certificate template image in the `template/` directory.
 - Add your custom font file to the `fonts/` directory.
 - Create or update `name_list.xlsx` in the root directory with participant names under the "Name" column.
+
+
+## Customization
+
+- **Font and Color**: You can modify the `font_color` and `font_size` variables in the script to adjust the appearance of the text on the certificate.
+- **Template Dimensions**: Update `template_width` and `template_height` in the script if your certificate template has different dimensions.
+- **Text Positioning**: Adjust the `name_x_position` and `name_y_position` variables or modify the `y_offset` in the script to control the text box's exact X and Y positions on the certificate template.
+
