@@ -72,10 +72,13 @@ for i in range(length):
     name_text_width = name_text_box[2] - name_text_box[0]
     name_text_height = name_text_box[3] - name_text_box[1]
 
-    # Center name horizontally and vertically
+    # Adjust the y-position offset (positive to move down, negative to move up)
+    y_offset = -25  # Change this value as needed
+
+    # Calculate centered X and adjusted Y position for the name
     name_x_position = (template_width - name_text_width) // 2
-    name_y_position = (template_height - name_text_height) // 2
-    
+    name_y_position = ((template_height - name_text_height) // 2) + y_offset  # Adjusted Y position
+
     # Add name to the certificate
     editable_image.text((name_x_position, name_y_position), name_of_participant, fill=font_color, font=name_font)
     
